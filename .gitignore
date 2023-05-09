@@ -1,0 +1,9 @@
+# arquivos de configuração
+node_modules/
+*.env
+*.log
+.env
+
+# dependências instaladas
+package-lock.json
+yarn.lock
