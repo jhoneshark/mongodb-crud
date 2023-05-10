@@ -39,13 +39,13 @@ class Product {
 
     updateProduct(id) {
         conn
-          .db()
-          .collection('products')
-          .updateOne({ _id:new ObjectId(id) }, { $set: this })
+        .db(dbName)
+        .collection('products')
+        .updateOne({ _id:new ObjectId(id) }, { $set: this } )
     
         return
       }
-      
+  
 }
 
 module.exports = Product
