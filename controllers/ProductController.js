@@ -1,6 +1,5 @@
 const Product = require('../models/Product')
-
-const { ObjectId } = require('mongodb')
+const { ObjectId } = require('mongodb');
 
 module.exports = class ProductController {
     static async showProducts(req, res) {
@@ -57,11 +56,11 @@ module.exports = class ProductController {
     static async editProductPost(req, res) {
         const id = req.body.id
         const name = req.body.name
+        const image = req.body.image
         const price = req.body.price
         const description = req.body.description
-        const image = req.body.image
     
-        const product = new Product( name, price, description, image)
+        const product = new Product( name, image, price, description)
     
         await product.updateProduct(id)
     
