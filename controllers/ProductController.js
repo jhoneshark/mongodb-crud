@@ -63,7 +63,6 @@ module.exports = class ProductController {
         const product = new Product( name, image, price, description)
     
         await product.updateProduct(id)
-    
         res.redirect('/products')
     }
 

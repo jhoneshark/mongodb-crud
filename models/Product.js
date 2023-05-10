@@ -39,12 +39,10 @@ class Product {
 
     updateProduct(id) {
         conn
-        .db(dbName)
-        .collection('products')
-        .updateOne({ _id:new ObjectId(id) }, { $set: this } )
-    
-        return
-      }
+          .db(dbName)
+          .collection('products')
+          .updateOne({ _id: new ObjectId(id) }, { $set: { ...this } });
+      } 
   
 }
 
