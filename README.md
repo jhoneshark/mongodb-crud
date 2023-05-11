@@ -1,3 +1,5 @@
+<img align="center" alt="Jhones-pic" height="500" src="https://i.imgur.com/FZn2L0X.gif">
+
 # Como instalar e iniciar o projeto
 
 Este repositório contém um projeto que utiliza Node.js, Handlebars e MongoDB. Para começar, siga as etapas abaixo:
