@@ -22,5 +22,6 @@ Este repositório contém um projeto que utiliza Node.js, Handlebars e MongoDB. 
 - Node.js
 - Handlebars
 - MongoDB
+- Express
 
 Para mais informações sobre como utilizar essas tecnologias, consulte a documentação oficial de cada uma delas.
